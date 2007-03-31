@@ -13,7 +13,7 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/J/JE/JESSE/HTTP-Server-Simple-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/J/JE/JESSE/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0c197222646d7f6b34800b9e69aae0b0
 URL:		http://search.cpan.org/dist/HTTP-Server-Simple/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -34,7 +34,7 @@ HTTP::Server::Simple jest prostym, samodzielnym serwerem HTTP.
 Domyślnie nie obsługuje on wątków i podprocesów, jednakże może
 byc użyty jako frontend do budowy samodzielnej aplikacji WWW lub jako
 CGI. Możliwe jest użycie modułu Net::Server do obsługi wątków,
-podprocesów itp. z wykorzystaniem kodu stworzonego przez Autrijus
+podprocesów itp. z wykorzystaniem kodu stworzonego przez Autrijusa
 Tanga.
 
 %prep
