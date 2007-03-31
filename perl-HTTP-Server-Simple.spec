@@ -9,7 +9,7 @@ Summary:	HTTP::Server::Simple - Lightweight HTTP server
 Summary(pl.UTF-8):	HTTP::Server::Simple - Lekki serwer HTTP
 Name:		perl-HTTP-Server-Simple
 Version:	0.27
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/HTTP/Server/*.pm
-%{perl_vendorlib}/HTTP/Server/Simple
+%{perl_vendorlib}/HTTP/Server
 %{_mandir}/man3/*
