@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests		# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	Server-Simple
 Summary:	HTTP::Server::Simple - Lightweight HTTP server
