@@ -7,13 +7,13 @@
 Summary:	HTTP::Server::Simple - Lightweight HTTP server
 Summary(pl.UTF-8):	HTTP::Server::Simple - Lekki serwer HTTP
 Name:		perl-HTTP-Server-Simple
-Version:	0.44
+Version:	0.52
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/J/JE/JESSE/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	70d4ae98affb9e921ab1478bbdffca3b
+Source0:	https://cpan.metacpan.org/authors/id/B/BP/BPS/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	1e23935491d9a2a8b0ba636462255656
 URL:		http://search.cpan.org/dist/HTTP-Server-Simple/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
