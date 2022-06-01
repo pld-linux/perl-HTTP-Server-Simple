@@ -1,22 +1,23 @@
 #
 # Conditional build:
-%bcond_with	tests		# perform "make test"
+%bcond_with	tests	# unit tests
 #
 %define	pdir	HTTP
 %define	pnam	Server-Simple
 Summary:	HTTP::Server::Simple - Lightweight HTTP server
-Summary(pl.UTF-8):	HTTP::Server::Simple - Lekki serwer HTTP
+Summary(pl.UTF-8):	HTTP::Server::Simple - lekki serwer HTTP
 Name:		perl-HTTP-Server-Simple
 Version:	0.52
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	https://cpan.metacpan.org/authors/id/B/BP/BPS/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/B/BP/BPS/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1e23935491d9a2a8b0ba636462255656
-URL:		http://search.cpan.org/dist/HTTP-Server-Simple/
+URL:		https://metacpan.org/dist/HTTP-Server-Simple
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -59,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/HTTP/Server
-%{_mandir}/man3/*
+%{_mandir}/man3/HTTP::Server::*.3pm*
