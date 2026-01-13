@@ -8,7 +8,7 @@ Summary:	HTTP::Server::Simple - Lightweight HTTP server
 Summary(pl.UTF-8):	HTTP::Server::Simple - lekki serwer HTTP
 Name:		perl-HTTP-Server-Simple
 Version:	0.52
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
